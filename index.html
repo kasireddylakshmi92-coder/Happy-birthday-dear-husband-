@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2 Months, Countless Memories, One Heart ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#090909;
+color:white;
+overflow-x:hidden;
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+background:#ff4d88;
+border-radius:20px;
+}
+
+/* Hero Section */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.65),
+rgba(0,0,0,.75)),
+url("images/charan-cover.jpg");
+
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+position:relative;
+}
+
+.hero-content{
+animation:fadeIn 2s ease;
+}
+
+.hero h1{
+font-size:4rem;
+font-family:'Great Vibes',cursive;
+color:#ff7aa2;
+margin-bottom:20px;
+}
+
+.hero h2{
+font-size:2rem;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:1.2rem;
+opacity:.9;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 30px;
+background:#ff4d88;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+transition:.4s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+background:#ff6799;
+}
+
+/* Floating Hearts */
+
+.hearts span{
+position:absolute;
+bottom:-50px;
+font-size:20px;
+animation:float 10s linear infinite;
+opacity:.7;
+}
+
+.hearts span:nth-child(1){left:10%;animation-delay:0s;}
+.hearts span:nth-child(2){left:30%;animation-delay:2s;}
+.hearts span:nth-child(3){left:50%;animation-delay:4s;}
+.hearts span:nth-child(4){left:70%;animation-delay:6s;}
+.hearts span:nth-child(5){left:90%;animation-delay:8s;}
+
+/* Sections */
+
+section{
+padding:100px 10%;
+text-align:center;
+}
+
+.section-title{
+font-size:3rem;
+margin-bottom:40px;
+color:#ff7aa2;
+font-family:'Great Vibes',cursive;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:20px;
+margin:20px auto;
+max-width:900px;
+line-height:1.8;
+box-shadow:0 0 30px rgba(255,77,136,.15);
+}
+
+/* Timeline */
+
+.timeline{
+position:relative;
+max-width:800px;
+margin:auto;
+}
+
+.timeline::before{
+content:'';
+position:absolute;
+left:50%;
+width:4px;
+height:100%;
+background:#ff4d88;
+transform:translateX(-50%);
+}
+
+.timeline-item{
+padding:20px;
+width:50%;
+position:relative;
+}
+
+.timeline-item.left{
+left:0;
+text-align:right;
+}
+
+.timeline-item.right{
+left:50%;
+}
+
+.timeline-content{
+background:#111;
+padding:20px;
+border-radius:15px;
+}
+
+/* Quote */
+
+.quote{
+font-size:1.4rem;
+font-style:italic;
+color:#ffd4e1;
+line-height:2;
+}
+
+/* Gallery */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:400px;
+object-fit:cover;
+border-radius:20px;
+transition:.5s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* Future Section */
+
+.future{
+background:linear-gradient(135deg,#111,#1c0f17);
+border-radius:30px;
+padding:60px;
+}
+
+/* Letter */
+
+.letter{
+max-width:900px;
+margin:auto;
+font-size:1.2rem;
+line-height:2;
+}
+
+/* Final Section */
+
+.final{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:black;
+}
+
+.final h1{
+font-size:4rem;
+color:#ff7aa2;
+font-family:'Great Vibes',cursive;
+}
+
+.final h2{
+margin-top:20px;
+font-size:2rem;
+}
+
+.final p{
+margin-top:30px;
+font-size:1.2rem;
+}
+
+/* Audio */
+
+.audio-player{
+margin-top:30px;
+}
+
+/* Animations */
+
+@keyframes float{
+0%{
+transform:translateY(0);
+opacity:0;
+}
+50%{
+opacity:1;
+}
+100%{
+transform:translateY(-100vh);
+opacity:0;
+}
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.8rem;
+}
+
+.hero h2{
+font-size:1.5rem;
+}
+
+.timeline::before{
+left:10px;
+}
+
+.timeline-item{
+width:100%;
+padding-left:40px;
+left:0 !important;
+text-align:left;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hearts">
+<span>❤️</span>
+<span>❤️</span>
+<span>❤️</span>
+<span>❤️</span>
+<span>❤️</span>
+</div>
+
+<div class="hero-content">
+
+<h1>2 Months, Countless Memories, One Heart</h1>
+
+<h2>Happy Birthday Dear Husband ❤️</h2>
+
+<p>From Your Wife ❤️‍🩹</p>
+
+<a href="#journey" class="btn">Begin Our Journey</a>
+
+<div class="audio-player">
+<audio controls autoplay loop>
+<source src="audio/kadalalle.mp3" type="audio/mpeg">
+</audio>
+</div>
+
+</div>
+
+</section>
+
+<!-- JOURNEY -->
+
+<section id="journey">
+
+<h2 class="section-title">Our Journey ❤️</h2>
+
+<div class="timeline">
+
+<div class="timeline-item left">
+<div class="timeline-content">
+<h3>24 March • 5:58 AM</h3>
+<p>The first message that changed my life.</p>
+</div>
+</div>
+
+<div class="timeline-item right">
+<div class="timeline-content">
+<h3>26 March • 9:16 PM</h3>
+<p>Will you marry me? ❤️</p>
+</div>
+</div>
+
+<div class="timeline-item left">
+<div class="timeline-content">
+<h3>26 March</h3>
+<p>The day we became us.</p>
+</div>
+</div>
+
+<div class="timeline-item right">
+<div class="timeline-content">
+<h3>Today</h3>
+<p>2 Months, Countless Memories, One Heart.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- WHY I LOVE YOU -->
+
+<section>
+
+<h2 class="section-title">Why I Love You ❤️</h2>
+
+<div class="card">
+
+<p class="quote">
+
+Ninnu endhuku love chestunnanu ante naa dhaggara reason ledhu.
+
+Naku naa life lo nuv vunte naa life bauntadhi anipinchindhi.
+
+Neetho lifelong vundali anipinchindhi.
+
+That's why I proposed you.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- MEMORIES -->
+
+<section>
+
+<h2 class="section-title">My Favorite Feeling ❤️</h2>
+
+<div class="card">
+
+<p class="quote">
+
+Nuv nannu cheppamma, cheppe, cheppara ala pilusthu vunte edho teliyani feel nalo nene murisi pothanu aa msgs chusi ❤️
+
+</p>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section>
+
+<h2 class="section-title">The Man I Fell For ❤️</h2>
+
+<div class="gallery">
+
+<img src="images/charan1.jpg">
+<img src="images/charan2.jpg">
+<img src="images/charan3.jpg">
+<img src="images/charan4.jpg">
+<img src="images/charan5.jpg">
+<img src="images/charan6.jpg">
+
+</div>
+
+</section>
+
+<!-- FUTURE -->
+
+<section>
+
+<h2 class="section-title">Our Future 🌟</h2>
+
+<div class="future">
+
+<h3>Our Dreams</h3>
+
+<br>
+
+<p>💍 Marriage</p>
+<p>🏡 Small House</p>
+<p>👶 Kids</p>
+<p>❤️ Happy Life Together</p>
+
+<br>
+
+<p class="quote">
+
+I don't dream about a perfect life.
+
+I dream about a simple life with you in it.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- LETTER -->
+
+<section>
+
+<h2 class="section-title">My Dear Husband ❤️</h2>
+
+<div class="letter">
+
+<p>
+
+Ee bdy ki nenu elago neetho vundaleka pothunna so andhuke nee kosam ee chinna gift prepare chesanu.
+
+<br><br>
+
+Anyway Wish you many more happy returns of the day my dear husband.
+
+<br><br>
+
+I hope our journey will continue till our death.
+
+<br><br>
+
+Love you so much ❤️😘🫂
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ENDING -->
+
+<section class="final">
+
+<h1>Happy Birthday Dear Husband ❤️</h1>
+
+<h2>From Your Wife ❤️‍🩹</h2>
+
+<p>
+
+March 24 — The first message.
+
+<br><br>
+
+March 26 — The beginning of our love story.
+
+<br><br>
+
+Forever — The dream we are still writing together. ❤️
+
+</p>
+
+</section>
+
+</body>
+</html>
